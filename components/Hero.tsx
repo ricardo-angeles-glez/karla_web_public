@@ -1,3 +1,6 @@
+"use client";
+import Link from "next/link";
+
 export const Hero = () => {
   return (
     <section className="min-h-screen flex items-center justify-center relative pt-16">
@@ -8,11 +11,14 @@ export const Hero = () => {
           <span className="text-primary"> LARA</span>
         </h1>
         <h2 className="text-xl md:text-3xl mb-8">
-          <span className="text-primary">"OH YES SHE KNOWS"</span> • Singer • Songwriter • Producer
+          <span className="text-primary">&quot;OH YES SHE KNOWS&quot;</span> • Singer • Songwriter • Producer
         </h2>
-        <a href="#music" className="bg-primary px-8 py-4 rounded-full font-bold hover:bg-opacity-90 transition-all text-lg">
+        <Link
+          href="#music"
+          className="bg-primary px-8 py-4 rounded-full font-bold hover:bg-opacity-90 transition-all text-lg"
+        >
           LISTEN NOW
-        </a>
+        </Link>
       </div>
     </section>
   );

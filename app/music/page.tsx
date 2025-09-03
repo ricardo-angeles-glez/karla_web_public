@@ -1,5 +1,5 @@
 import { Header } from "../../components/Header";
-import  MusicPlayer  from "../../components/MusicPreview";
+import Image from "next/image";
 
 const albums = [
   {
@@ -44,12 +44,18 @@ export default function Music() {
         <h1 className="text-4xl md:text-6xl font-bold mb-12 text-center">
           MY <span className="text-primary">MUSIC</span>
         </h1>
-        
+
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {albums.map((album, index) => (
             <div key={index} className="bg-gray-900 rounded-lg overflow-hidden">
-              <div className="aspect-square bg-gray-800">
-                <img src={album.cover} alt={album.title} className="w-full h-full object-cover" />
+              <div className="aspect-square bg-gray-800 relative">
+                <Image
+                  src={album.cover}
+                  alt={album.title}
+                  fill
+                  className="object-cover"
+                  priority={true} // carga rápida de portadas principales
+                />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2">{album.title}</h3>
@@ -69,7 +75,7 @@ export default function Music() {
             </div>
           ))}
         </div>
-        
+
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl font-bold mb-8 text-center">STREAM ON ALL PLATFORMS</h2>
           <div className="flex flex-wrap justify-center gap-4">

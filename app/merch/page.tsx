@@ -1,4 +1,5 @@
 import { Header } from "../../components/Header";
+import Image from "next/image";
 
 const products = [
   {
@@ -35,12 +36,18 @@ export default function Merch() {
         <h1 className="text-4xl md:text-6xl font-bold mb-12 text-center">
           OFFICIAL <span className="text-primary">MERCH</span>
         </h1>
-        
+
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           {products.map((product, index) => (
             <div key={index} className="bg-gray-900 rounded-lg overflow-hidden">
-              <div className="aspect-square bg-gray-800">
-                <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
+              <div className="aspect-square bg-gray-800 relative">
+                <Image
+                  src={product.image}
+                  alt={product.name}
+                  fill
+                  className="object-cover"
+                  priority={true} // opcional: carga rápida de imágenes principales
+                />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2">{product.name}</h3>
@@ -55,7 +62,7 @@ export default function Merch() {
             </div>
           ))}
         </div>
-        
+
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-2xl font-bold mb-4">MORE ITEMS COMING SOON!</h2>
           <p className="text-gray-400 mb-6">

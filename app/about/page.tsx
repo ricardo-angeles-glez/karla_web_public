@@ -8,7 +8,7 @@ export default function About() {
         <h1 className="text-4xl md:text-6xl font-bold mb-12 text-center">
           ABOUT <span className="text-primary">KARLA</span>
         </h1>
-        
+
         <div className="max-w-4xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 mb-16">
             <div>
@@ -25,13 +25,13 @@ export default function About() {
                 to international stages, always staying true to her authentic sound.
               </p>
             </div>
-            
+
             <div>
               <h2 className="text-2xl font-bold mb-6">Musical Journey</h2>
               <div className="space-y-4">
                 <div className="p-4 bg-gray-900 rounded-lg">
                   <h3 className="text-lg font-bold text-primary">2015</h3>
-                  <p>Released first EP "First Steps"</p>
+                  <p>Released first EP &quot;First Steps&quot;</p>
                 </div>
                 <div className="p-4 bg-gray-900 rounded-lg">
                   <h3 className="text-lg font-bold text-primary">2018</h3>
@@ -43,19 +43,19 @@ export default function About() {
                 </div>
                 <div className="p-4 bg-gray-900 rounded-lg">
                   <h3 className="text-lg font-bold text-primary">2023</h3>
-                  <p>Launched "Oh Yes She Knows" project</p>
+                  <p>Launched &quot;Oh Yes She Knows&quot; project</p>
                 </div>
               </div>
             </div>
           </div>
-          
+
           <div className="bg-gray-900 p-8 rounded-lg">
             <h2 className="text-2xl font-bold mb-6">Artist Statement</h2>
             <blockquote className="text-xl italic border-l-4 border-primary pl-6">
-              "Music is the divine way to tell beautiful, poetic things to the heart.
+              &quot;Music is the divine way to tell beautiful, poetic things to the heart.
               My mission is to create sounds that touch souls and connect people across
               cultures and experiences. Through my music, I want to empower others to
-              embrace their truth and find strength in vulnerability."
+              embrace their truth and find strength in vulnerability.&quot;
             </blockquote>
             <p className="mt-4 font-bold">— Karla Lara</p>
           </div>
