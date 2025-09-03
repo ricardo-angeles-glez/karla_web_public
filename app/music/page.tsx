@@ -6,7 +6,7 @@ const albums = [
     title: "Oh Yes She Knows",
     year: "2023",
     type: "Single",
-    cover: "/album-1.jpg",
+    cover: "/video-2.jpg",
     tracks: [
       { title: "Oh Yes She Knows", duration: "3:45" },
     ]
@@ -15,7 +15,7 @@ const albums = [
     title: "Midnight Whispers",
     year: "2022",
     type: "Album",
-    cover: "/album-2.jpg",
+    cover: "/project-1.jpg",
     tracks: [
       { title: "Intro", duration: "1:20" },
       { title: "Midnight Whispers", duration: "4:15" },
@@ -27,7 +27,7 @@ const albums = [
     title: "Electric Dreams",
     year: "2021",
     type: "EP",
-    cover: "/album-3.jpg",
+    cover: "/video-1.jpg",
     tracks: [
       { title: "Electric Dreams", duration: "3:20" },
       { title: "Neon Lights", duration: "3:45" },

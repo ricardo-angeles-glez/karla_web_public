@@ -22,7 +22,7 @@ const products = [
   {
     name: "Hoodie",
     price: "$50",
-    image: "/merch-4.jpg",
+    image: "/merch-4.png",
     description: "Comfortable hoodie with minimalist design"
   }
 ];
