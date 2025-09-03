@@ -6,8 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "deploy": "gh-pages -d out"
+    "deploy": "gh-pages -d out",
+    "lint": "next lint"
   },
   "homepage": "https://ricardo-angeles-glez.github.io/karla_web_public",
   "dependencies": {
