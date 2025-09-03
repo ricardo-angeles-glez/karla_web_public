@@ -21,11 +21,11 @@ jobs:
         run: npm install
 
       - name: Build Next.js
-        run: npm run deploy  # Solo build, no export
+        run: npm run build  # Solo build, no gh-pages aquí
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+        uses: peaceiris/actions-gh-pages@v5
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./out  # Next.js con output: 'export' genera esta carpeta
+          publish_dir: ./out  # La carpeta generada por next export / output: 'export'
           publish_branch: gh-pages
